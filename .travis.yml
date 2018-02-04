@@ -3,6 +3,12 @@ script:
 - cmake .
 - cmake --build .
 - cmake --build . --target package
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - g++-7
 deploy:
   provider: script
   skip_cleanup: true
