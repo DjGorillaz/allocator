@@ -9,6 +9,10 @@ addons:
     - ubuntu-toolchain-r-test
     packages:
     - g++-7
+
+install:
+  - export CXX="g++-7"
+
 deploy:
   provider: script
   skip_cleanup: true
